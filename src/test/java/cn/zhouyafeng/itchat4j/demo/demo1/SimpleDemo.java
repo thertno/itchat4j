@@ -30,9 +30,9 @@ public class SimpleDemo implements IMsgHandlerFace {
 	public String textMsgHandle(BaseMsg msg) {
 		// String docFilePath = "D:/itchat4j/pic/1.jpg"; // 这里是需要发送的文件的路径
 		if (!msg.isGroupMsg()) { // 群消息不处理
-			// String userId = msg.getString("FromUserName");
-			// MessageTools.sendFileMsgByUserId(userId, docFilePath); // 发送文件
-			// MessageTools.sendPicMsgByUserId(userId, docFilePath);
+			 /*String userId = msg.getString("FromUserName");
+			 MessageTools.sendFileMsgByUserId(userId, docFilePath); // 发送文件
+			 MessageTools.sendPicMsgByUserId(userId, docFilePath);*/
 			String text = msg.getText(); // 发送文本消息，也可调用MessageTools.sendFileMsgByUserId(userId,text);
 			LOG.info(text);
 			if (text.equals("111")) {
